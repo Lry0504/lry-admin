@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'antd';
-
+import { connect } from 'react-redux'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import NavLeft from './components/NavLeft'
@@ -18,7 +18,7 @@ class Admin extends React.Component {
           <Col span={20} className="main">
             <Header />
             <Row className="content">
-              content
+              {this.props.children}
             </Row>
             <Footer />
           </Col>
@@ -28,4 +28,4 @@ class Admin extends React.Component {
   }
 }
 
-export default Admin
+export default connect()(Admin)
