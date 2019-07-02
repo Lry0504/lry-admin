@@ -1,10 +1,29 @@
 @import '../../assets/style/default.scss';
 
-.buttons {
-  .card-wrap {
-    margin-bottom: 10px;
-    button {
-      margin-right: 10px;
+
+.card-wrap {
+  margin-bottom: 10px;
+  button {
+    margin-right: 10px;
+  }
+}
+
+.modals {
+  .vertical-center-modal {
+    text-align: center;
+    white-space: nowrap;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .ant-modal {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      top: 0;
     }
   }
 }
