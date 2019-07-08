@@ -44,27 +44,23 @@ class Modals extends Component {
           <Button type="primary" onClick={() => this.handleConfirm('warning')}>Warning</Button>
         </Card>
         <Modal title="open" visible={this.state.visible1}
-          onCancel={() => this.setState({
-            visible1: false
-          })}>
+          onCancel={() => this.setState({visible1: false})} onOk={() => this.setState({visible: false})}
+        >
           <p>欢迎来到lry-admin后台管理系统</p>
         </Modal>
         <Modal title="自定义页脚" visible={this.state.visible2} okText="好的" cancelText="算了"
-          onCancel={() => this.setState({
-            visible2: false
-          })}>
+          onCancel={() => this.setState({visible2: false})} onOk={() => this.setState({visible2: false})}
+        >
           <p>欢迎来到lry-admin后台管理系统</p>
         </Modal>
-        <Modal title="水平垂直居中" visible={this.state.visible3} wrapClassName="vertical-center-modal"
-          onCancel={() => this.setState({
-            visible3: false
-          })}>
+        <Modal title="水平垂直居中" visible={this.state.visible3} centered
+          onCancel={() => this.setState({visible3: false})} onOk={() => this.setState({visible3: false})}
+        >
           <p>欢迎来到lry-admin后台管理系统</p>
         </Modal>
         <Modal title="顶部20px弹窗" visible={this.state.visible4} style={{top: 20}}
-          onCancel={() => this.setState({
-            visible4: false
-          })}>
+          onCancel={() => this.setState({visible4: false})} onOk={() => this.setState({visible4: false})}
+        >
           <p>欢迎来到lry-admin后台管理系统</p>
         </Modal>
       </div>
