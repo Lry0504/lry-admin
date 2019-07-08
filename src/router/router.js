@@ -6,6 +6,12 @@ import Home from '../pages/Home'
 import Buttons from '../pages/UI/button'
 import Modals from '../pages/UI/modal'
 import Loadings from '../pages/UI/loading'
+import Notifications from '../pages/UI/notice'
+import Messages from '../pages/UI/message'
+import Tabs from '../pages/UI/tab'
+import ProgressBar from '../pages/UI/progress'
+import StepBar from '../pages/UI/step'
+import Carousels from '../pages/UI/carousel'
 export default class RouterMap extends React.Component {
   render() {
     return (
@@ -19,6 +25,12 @@ export default class RouterMap extends React.Component {
                   <Route path="/ui/buttons" component={Buttons} />
                   <Route path="/ui/modals" component={Modals} />
                   <Route path="/ui/loadings" component={Loadings} />
+                  <Route path="/ui/notification" component={Notifications} />
+                  <Route path="/ui/messages" component={Messages} />
+                  <Route path="/ui/tabs" component={Tabs} />
+                  <Route path="/ui/progress" component={ProgressBar} />
+                  <Route path="/ui/steps" component={StepBar} />
+                  <Route path="/ui/carousel" component={Carousels} />
                   <Redirect to="/home" />
                 </Switch>
               </Admin>

@@ -6,24 +6,16 @@
   button {
     margin-right: 10px;
   }
-}
-
-.modals {
-  .vertical-center-modal {
+  .ant-progress {
+    margin-right: 10px;
+  }
+  .step-content {
+    margin-top: 10px;
+    border: 1px dashed $colorN;
+    border-radius: 6px;
+    background-color: $colorQ;
+    min-height: 200px;
     text-align: center;
-    white-space: nowrap;
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 0;
-      height: 100%;
-      vertical-align: middle;
-    }
-    .ant-modal {
-      display: inline-block;
-      text-align: left;
-      vertical-align: middle;
-      top: 0;
-    }
+    padding-top: 80px;
   }
 }

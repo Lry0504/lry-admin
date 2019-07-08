@@ -32,8 +32,12 @@ const menuList = [
                 key: '/ui/tabs',
             },
             {
-                title: '图片画廊',
-                key: '/ui/gallery',
+                title: 'Progress进度条',
+                key: '/ui/progress',
+            },
+            {
+                title: 'Step步骤条',
+                key: '/ui/steps'
             },
             {
                 title: '轮播图',
